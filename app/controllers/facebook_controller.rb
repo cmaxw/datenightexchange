@@ -3,7 +3,7 @@ require 'openssl'
 
 class FacebookController < ApplicationController
   def canvas
-    if fb_data = facebook_signed_request?
+    if fb_data = facebook_signed_request?(params[:signed_request], "2cbe9ab9f816c6994d239ee12f30f336")
       logger.info fb_data.inspect
     end
   end
