@@ -1,4 +1,5 @@
 Datenightexchange::Application.routes.draw do
+  post "facebook/canvas"
   get "facebook/canvas"
 
   # The priority is based upon order of creation:
