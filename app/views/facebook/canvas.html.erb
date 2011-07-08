@@ -1,2 +1,5 @@
-<h1>Facebook#canvas</h1>
-<p>Find me in app/views/facebook/canvas.html.erb</p>
+<% unless @facebook_user %>
+  <script type="text/javascript">
+    window.localhost.href = 'https://www.facebook.com/dialog/oauth?client_id=9dc82e8d3754dbc2f2e851f1a8e74b82&redirect_uri=http://datenightexchange.com/facebook/canvas/';
+  </script>
+<% end %>
