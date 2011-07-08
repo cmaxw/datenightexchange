@@ -1,5 +1,5 @@
 <% unless @facebook_user %>
   <script>
-    <%= "window.location.href = 'https://www.facebook.com/dialog/oauth?app_id=9dc82e8d3754dbc2f2e851f1a8e74b82&redirect_uri=#{CGI.escape("http://datenightexchange.com/facebook/canvas/")}';" %>
+    <%= "top.location.href = 'https://www.facebook.com/dialog/oauth?app_id=9dc82e8d3754dbc2f2e851f1a8e74b82&redirect_uri=#{CGI.escape("http://datenightexchange.com/facebook/canvas/")}';" %>
   </script>
 <% end %>
