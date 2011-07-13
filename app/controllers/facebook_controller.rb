@@ -3,9 +3,9 @@ require 'openssl'
 
 class FacebookController < ApplicationController
   def canvas
-    if fb_data = facebook_signed_request?(params[:signed_request], "2cbe9ab9f816c6994d239ee12f30f336")
-      render :text => "<script> top.location.href='http://www.facebook.com/dialog/oauth?client_id=9dc82e8d3754dbc2f2e851f1a8e74b82&redirect_uri=#{CGI.escape("http://datenightexchange.com/facebook/canvas/")}&response_type=token' </script>", :layout => false
-    end
+    # if fb_data = facebook_signed_request?(params[:signed_request], "2cbe9ab9f816c6994d239ee12f30f336")
+      # render :text => "<script> top.location.href='http://www.facebook.com/dialog/oauth?client_id=9dc82e8d3754dbc2f2e851f1a8e74b82&redirect_uri=#{CGI.escape("http://datenightexchange.com/facebook/canvas/")}&response_type=token' </script>", :layout => false
+    # end
   end
 
   def facebook_signed_request? (signed_request, secret)
